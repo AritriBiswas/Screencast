@@ -17,7 +17,7 @@ function FinishedPlaying(props) {
                   fontSize: "30px",
                   fontFamily: "'Russo One', sans-serif",
                 }}>
-                <span className="flicker">SCREENCAST</span>
+                <span className="flicker">GEEKTOBER</span>
               </div>
             </div>
                 <div className={styles.showF}>

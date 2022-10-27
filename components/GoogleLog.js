@@ -90,6 +90,7 @@ function GoogleLog(props) {
             color="secondary"
             disableElevation={true}
             onClick={login}
+            
             className="btnSubmit"
             style={{ 
                 backgroundColor: "rgba(0,0,0,0)", 
@@ -107,8 +108,8 @@ function GoogleLog(props) {
                  fontSize:"15px",
                 
                  }}
-          >LOGIN
-            {/*<SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" />*/}
+          >Google Login
+            {/* <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" /> */}
             {/* <GoogleLogin
 
             onSuccess={responseGoogle} //isSignedIn ??
@@ -117,6 +118,7 @@ function GoogleLog(props) {
             cookiePolicy={"single_host_origin"}
           /> */}
           </Button>
+          <img style={{height:"50px", padding:"1px 1px 1px 1px", margin:"px 1px 1px 1px"}}src="./google.png"></img>
         </div>
           
         ):

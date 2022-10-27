@@ -1,5 +1,5 @@
 import React from "react";
-import { SocialMediaIconsReact } from 'social-media-icons-react';
+// import { SocialMediaIconsReact } from 'social-media-icons-react';
 import FacebookLogin from 'react-facebook-login/dist/facebook-login-render-props'
 import Router from "next/router";
 import axios from "axios";
@@ -18,7 +18,7 @@ const LoginButton = ({ facebookResponse }) => (
     redirectUri="https://screencast.trennds.com/"
     render={renderProps => (
       <button style={{ backgroundColor: "rgba(0,0,0,0)", border: "none" }} onClick={renderProps.onClick}>
-        <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="3" borderStyle="inset" icon="facebook" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(28,149,223,1)" iconSize="6" roundness="29%" size="54" />
+        {/* <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="3" borderStyle="inset" icon="facebook" iconColor="rgba(255,255,255,1)" backgroundColor="rgba(28,149,223,1)" iconSize="6" roundness="29%" size="54" /> */}
       </button>)}
   >
   </FacebookLogin>

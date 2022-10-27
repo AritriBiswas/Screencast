@@ -54,7 +54,7 @@ export default function Question(props) {
             fontFamily: "'Russo One', sans-serif",
           }}
         >
-          <span className="flicker">SCREENCAST</span>
+          <span className="flicker">GEEKTOBER</span>
         </div>
       </div>
       </div>

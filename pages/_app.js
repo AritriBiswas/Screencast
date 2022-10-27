@@ -41,7 +41,7 @@ function MyApp(props) {
             name="viewport"
             content="width=device-width, initial-scale=1.0"
           />
-          <title>Screencast</title>
+          <title>GEEKTOBER</title>
           <link rel="stylesheet" type="text/css" href="question.css" />
         </Head>
         <ThemeProvider theme={theme}>

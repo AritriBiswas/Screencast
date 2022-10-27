@@ -12,6 +12,7 @@ import axios from "axios";
 // import data from '../env.json';
 import Avatar from "@material-ui/core/Avatar";
 import Loader from "./Loader";
+import { blue } from "@material-ui/core/colors";
 
 const StyledTableCell = withStyles((theme) => ({
   head: {
@@ -36,29 +37,36 @@ const StyledTableCell = withStyles((theme) => ({
 
 const StyledTableRow = withStyles((theme) => ({
   root: {
-    "&:nth-of-type(1)": {
-       backgroundColor: "#1b0045 !important",
-      color: "#000 !important",
-    },
-    "&:nth-of-type(2)": {
-      backgroundColor: "#1b0045 !important",
-      color: "#000 !important"
-    },
-    "&:nth-of-type(3)": {
-      backgroundColor: "#1b0045 !important",
-      color: "#000 !important"
-    },
-    "&:nth-of-type(odd)": {
-      //backgroundColor: "#1b0045 !important",
-      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
-      color: "#000 !important"
-    },
-    "&:nth-of-type(even)": {
-      //backgroundColor: "#1b0045 !important",
+    // "&:nth-of-type(1)": {
+    //    backgroundColor: "#1b0045 !important",
+    //   color: "#000 !important",
+    // },
+    // "&:nth-of-type(2)": {
+    //   backgroundColor: "#1b0045 !important",
+    //   color: "#000 !important"
+    // },
+    // "&:nth-of-type(3)": {
+    //   backgroundColor: "#1b0045 !important",
+    //   color: "#000 !important"
+    // },
+    // "&:nth-of-type(odd)": {
+    //   //backgroundColor: "#1b0045 !important",
+    //   background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
+    //   color: "#000 !important"
+    // },
+    // "&:nth-of-type(even)": {
+    //   //backgroundColor: "#1b0045 !important",
 
-      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
-      color: "white !important",
-    },
+    //   background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
+    //   color: "white !important",
+    // },
+
+
+    
+    // border:"2px solid white",
+    
+    backdropFilter:"blur(14px)",
+    
   },
 }))(TableRow);
 
@@ -69,6 +77,7 @@ const useStyles = makeStyles({
     minWidth:"100px",
     width:"90%",
     overflowX: "hidden",
+   
   },
 });
 
@@ -124,7 +133,7 @@ export default function Leadertable() {
                 {RankList.map((row, index) => (
                   <StyledTableRow
                     key={index}
-                    style={{ fontFamily: "'Barlow', sans-serif" }}
+                    style={{ fontFamily: "'Barlow', sans-serif",}}
                   >
                     <StyledTableCell component="th" scope="row">
                       {row.rank}.

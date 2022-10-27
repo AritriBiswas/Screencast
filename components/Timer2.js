@@ -57,7 +57,7 @@ export default function Timer(props) {
                                 fontFamily: "'Russo One', sans-serif",
                             }}
                         >
-                            <span className="flicker">SCREENCAST</span>
+                            <span className="flicker">GEEKTOBER</span>
                         </div>
                     </div>
                     
