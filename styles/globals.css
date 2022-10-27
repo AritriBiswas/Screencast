@@ -29,7 +29,7 @@
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("../public/scbg4.jpg");
+    background-image: url("../public/bg4.jpg");
     z-index: -99;
     background-size: cover;
 }
@@ -40,7 +40,7 @@ body::-webkit-scrollbar {
 
 @media only screen and (max-width: 600px) {
     .back {
-        background-image: url("../public/scbg4.jpg");
+        background-image: url("../public/bg4.jpg");
         /*background-size: auto 110vh;*/
     }
 }
@@ -267,11 +267,11 @@ body::-webkit-scrollbar {
     36%,
     75% {
         color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #db65ff, -0.2rem 0.1rem 1rem #a865ff, 0.2rem 0.1rem 1rem #ce65ff, 0 -0.5rem 2rem #9c24ff, 0 0.5rem 3rem #7824ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #db65ff, -0.2rem 0.1rem 1rem #a865ff, 0.2rem 0.1rem 1rem #ce65ff, 0 -0.5rem 2rem #9c24ff, 0 0.5rem 3rem #ff68a0;
     }
     28%,
     33% {
-        color: #a065ff;
+        color: #ff68a0;
         text-shadow: none;
     }
     82%,
@@ -296,7 +296,7 @@ body::-webkit-scrollbar {
     }
     100% {
         color: #ffe6ff;
-        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #e065ff, -0.2rem 0.1rem 1rem #c765ff, 0.2rem 0.1rem 1rem #e065ff, 0 -0.5rem 2rem #c124ff, 0 0.5rem 3rem #8324ff;
+        text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #e065ff, -0.2rem 0.1rem 1rem #c765ff, 0.2rem 0.1rem 1rem #e065ff, 0 -0.5rem 2rem #c124ff, 0 0.5rem 3rem #ff68a0;
     }
 }
 

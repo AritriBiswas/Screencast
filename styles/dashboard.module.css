@@ -1,5 +1,5 @@
 .Container{
-   background-image: url('../public/scbg4.jpg');
+   background-image: url('../public/bg4.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -23,7 +23,7 @@ height: calc(100vh - 60px);
 border-radius: 20px;
 background: rgba(29, 11, 63, 0.493);
     /* border: 2px solid #b4aeb9ce; */
-    backdrop-filter: blur(15px);
+    /* backdrop-filter: blur(15px); */
 position: relative;
 /* overflow: scroll; */
 /* padding: 20px 0; */

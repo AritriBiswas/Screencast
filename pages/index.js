@@ -14,7 +14,7 @@ function index() {
    <div className={styles.dashboard}> 
   <div className={styles.glasscontainer}>
     <div className={styles.nave}>
-      <div className={styles.logo}>SCREEN<span>CAST</span></div>
+      <div className={styles.logo}>GEEKTOBER</div>
     </div>
 
     <div className={styles.main}>

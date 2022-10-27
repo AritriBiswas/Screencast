@@ -7,6 +7,7 @@ import { ThemeProvider } from "@material-ui/core/styles";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Loader from "../components/Loader.js"
 import theme from "../components/Theme";
+import { GoogleOAuthProvider } from '@react-oauth/google';
 
 function MyApp(props) {
   const[loaded,setLoaded]=useState(false);
@@ -32,7 +33,7 @@ function MyApp(props) {
         const { Component, pageProps } = props;
 
         return(
-        <>
+        <GoogleOAuthProvider clientId='362750671866-d6f7gorqe40b1297kgion38dpan49ij9.apps.googleusercontent.com'>
         <React.Fragment>
         <Head>
         <meta charSet="UTF-8" />
@@ -54,7 +55,7 @@ function MyApp(props) {
           </div>
         </ThemeProvider>
         </React.Fragment>
-        </>
+        </GoogleOAuthProvider>
         );
     
 }
