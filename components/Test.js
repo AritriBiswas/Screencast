@@ -101,7 +101,7 @@ export default function TemporaryDrawer() {
                 render={(renderProps) => (
                   <div className={classes.root}>
                     <Link href="/">
-                      <MenuItem onClick={logout}><Typography style={{ color: '#FFFFFF', fontFamily:"'Russo One', sans-serif", fontSize:18 }}>Logout</Typography></MenuItem>
+                      <MenuItem onClick={logout}><Typography style={{ color: '#FFFFFF', fontFamily:"'Russo One', sans-serif", fontSize:18 , backgroundImage:"linear-gradient(to left, blue, transparent)"}}>Logout</Typography></MenuItem>
                     </Link>
                   </div>
                 )}

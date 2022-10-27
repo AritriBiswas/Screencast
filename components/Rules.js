@@ -76,7 +76,7 @@ export default function Rules() {
         //style={{background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important'}}
         classes={{ paper: styles.paper }}
         > 
-          <DialogContentText id="alert-dialog-slide-description">
+          <DialogContentText id="alert-dialog-slide-description" >
             <Typography
             style={{color:'white'}}>
               <ol className="p-3">

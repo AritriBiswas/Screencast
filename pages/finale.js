@@ -38,7 +38,7 @@ function finale() {
             color="primary"
             elevation={3}
             onClick={goback}
-            style={{ backgroundColor: '#000044', border: "0px solid white", height: "40px", borderRadius: "7px", display: 'block', margin: '0 auto', }}
+            style={{ backgroundColor: 'rgb(247, 64, 175)', border: "0px solid white", height: "40px", borderRadius: "7px", display: 'block', margin: '0 auto', }}
           >
             Logout
               </Button>

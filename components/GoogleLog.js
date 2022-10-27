@@ -96,9 +96,10 @@ function GoogleLog(props) {
                 backgroundColor: "rgba(0,0,0,0)", 
                 padding: "0",
                  color: "white", 
-                 border: "2px solid #b14de0", 
-                 backgroundColor: "#330965",
-                 height: "40px", width: "120px", 
+                //  border: "2px solid #b14de0", 
+                //  backgroundColor: "#330965",
+                marginTop: "50px",
+                 height: "0px", width: "0px", 
                  fontWeight:"bolder",
                  borderRadius: "20px",
                  letterSpacing: "2px",  
@@ -108,7 +109,7 @@ function GoogleLog(props) {
                  fontSize:"15px",
                 
                  }}
-          >Google Login
+          >
             {/* <SocialMediaIconsReact borderColor="rgba(0,0,0,0.25)" borderWidth="4" borderStyle="inset" icon="googleplus" iconColor="rgba(0,0,0,1)" backgroundColor="rgb(135, 194, 250)" iconSize="7" roundness="50%" size="53" /> */}
             {/* <GoogleLogin
 
@@ -117,8 +118,9 @@ function GoogleLog(props) {
 
             cookiePolicy={"single_host_origin"}
           /> */}
+           <img style={{height:"40px", padding:"1px 1px 1px 1px", margin:"px 1px 1px 1px"}}src="./google.png"></img>
           </Button>
-          <img style={{height:"50px", padding:"1px 1px 1px 1px", margin:"px 1px 1px 1px"}}src="./google.png"></img>
+          {/* <img style={{height:"50px", padding:"1px 1px 1px 1px", margin:"px 1px 1px 1px"}}src="./google.png"></img> */}
         </div>
           
         ):
