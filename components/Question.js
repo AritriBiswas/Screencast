@@ -3,7 +3,7 @@ import { makeStyles } from "@material-ui/core/styles";
 import CardContent from "@material-ui/core/CardContent";
 import Typography from "@material-ui/core/Typography";
 // import data from '../env.json';
-import AudioHint from "./AudioHint";
+// import AudioHint from "./AudioHint";
 import { Data } from "react-f/lib/src/form";
 import ResponsiveImage from './ImageHint'
 
@@ -91,7 +91,7 @@ export default function Question(props) {
         
 
         <br />
-        {props.audio ? (
+        {/* {props.audio ? (
           <div style={{ textAlign: "center", margin: "0 auto" }}>
             <AudioHint
               style={{ textAlign: "center", margin: "0 auto" }}
@@ -100,7 +100,7 @@ export default function Question(props) {
           </div>
         ) : (
             <div></div>
-          )}
+          )} */}
       </CardContent>
       </div>
     </div>

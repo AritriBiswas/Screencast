@@ -86,7 +86,7 @@ export default function game() {
             setQuestions(response.data.questions);
             setHint(response.data.hint);
             setQsNo(response.data.question_no);
-            setAudio(response.data.audio);
+            // setAudio(response.data.audio);
             setImage(response.data.image);
           
         window.scrollTo(0, 0);
