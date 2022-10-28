@@ -73,12 +73,12 @@ export default function Rules() {
         <DialogTitle id="alert-dialog-slide-title"
         style={{color:'Magenta'}}>{"RULES"}</DialogTitle>
         <DialogContent
-        //style={{background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important'}}
+        style={{background:'linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%) !important'}}
         classes={{ paper: styles.paper }}
         > 
           <DialogContentText id="alert-dialog-slide-description" >
             <Typography
-            style={{color:'white'}}>
+            style={{color:'white' }}>
               <ol className="p-3">
                 <li>The quiz comprises of 15 questions from 3 difficulty standards.</li>
                 <li>Each question denotes a level.</li>

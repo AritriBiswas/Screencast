@@ -22,16 +22,17 @@ const StyledTableCell = withStyles((theme) => ({
     fontFamily: "Russo One",
     fontSize: 16,
     background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%)",
-    backdropFilter: "blur(100px)",
-    boxShadow: "1px 1px 2px rgba(1, 247, 247, 0.72)",
+    backdropFilter: "blur(20px)",
+    boxShadow: "1px 1px 2px rgb(255, 93, 174)",
     
   },
   body: {
     fontFamily: "Russo One",
-    fontSize: 13,
+    fontSize: 14,
     color: "#fff",
     border: "none",
-    padding:"10px"
+    borderRadius:"12px",
+    padding:"13px"
   },
 }))(TableCell);
 
@@ -66,16 +67,19 @@ const StyledTableRow = withStyles((theme) => ({
     // border:"2px solid white",
     
     backdropFilter:"blur(14px)",
+    borderRadius:"12px",
+    margin:"1px 1px 1px 1px"
     
   },
 }))(TableRow);
 
 const useStyles = makeStyles({
   table: {
-    margin:"15px auto",
+    margin:"30px auto",
     maxWidth: "900px",
     minWidth:"100px",
     width:"90%",
+    borderRadius:"12px",
     overflowX: "hidden",
    
   },
@@ -120,16 +124,17 @@ export default function Leadertable() {
       { (loaded === true) ?
         <div className="rtable">
           <Table className={classes.table} aria-label="customized table">
-            <TableHead>
+            <TableHead >
               <TableRow>
                 <StyledTableCell>Rank</StyledTableCell>
-                <StyledTableCell></StyledTableCell>
+                <StyledTableCell>Avatar</StyledTableCell>
+                
                 <StyledTableCell align="left">Player</StyledTableCell>
                 <StyledTableCell align="left">Points</StyledTableCell>
               </TableRow>
             </TableHead>
             {RankList.length ? (
-              <TableBody style={{ fontFamily: "'Barlow', sans-serif" }}>
+              <TableBody style={{ fontFamily: "'Barlow', sans-serif", padding:"5px 1px 1px 1px" }}>
                 {RankList.map((row, index) => (
                   <StyledTableRow
                     key={index}

@@ -18,7 +18,8 @@ function Footer() {
             position: "relative",//changed
             padding: "0",
             /*marginTop: "100px",*/
-            width:"100%"
+            width:"100%",
+            padding:"5px 5px 5px 5px"
 
           }}
         >

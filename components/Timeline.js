@@ -124,10 +124,14 @@ function Timeline(props) {
                         <Button
                           onClick={logout}
                           style={{
-                            backgroundColor: "#c0a5ea",
+                            border: "2px solid pink",
                             borderRadius: "45px",
                             height: "40px",
+                            padding:"1px 2px 3px 4px",
                             width: "100px",
+                            backgroundColor:"pink",
+                            fontWeight:"600"
+
                           }}
                         >
                           Logout

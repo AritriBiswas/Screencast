@@ -257,7 +257,7 @@ body::-webkit-scrollbar {
     text-transform: uppercase;
     font-size: 37px;
     color: #ffe6ff;
-    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #65baff, -0.2rem 0.1rem 1rem #fd85cb, 0.2rem 0.1rem 1rem #65e0ff, 0 -0.5rem 2rem #24fff4, 0 0.5rem 3rem #2471ff;
+    text-shadow: 0 0 0.6rem #ffe6ff, 0 0 1.5rem #e565ff, -0.2rem 0.1rem 1rem #fd85cb, 0.2rem 0.1rem 1rem #ff92f6, 0 -0.5rem 2rem #e88bff, 0 0.5rem 3rem #ff43e6;
     animation: shine 2s forwards, flicker 3s infinite;
 }
 

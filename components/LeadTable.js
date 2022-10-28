@@ -10,6 +10,7 @@ export default function leaderboard() {
             className="container neon-box"
             style={{
               textAlign: "center",
+              padding:"5px 5px 5px 5px",
               fontSize: "30px",
               fontFamily: "'Russo One', sans-serif",
             }}
@@ -17,7 +18,7 @@ export default function leaderboard() {
             <span className="flicker">LEADERBOARD</span>
         </div>
           </div>
-        <div className="leadWrapper">
+        <div style={{padding:"5px 5px 5px 5px",}} className="leadWrapper">
         <Leadertable />
         </div>
       {/* </div> */}

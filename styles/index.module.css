@@ -80,8 +80,9 @@
   .innercontent {
     flex-basis: 40%;
     padding-left: 5%;
-    color: rgb(255, 157, 239);
+    color: rgb(176, 8, 200);
     flex-wrap: wrap;
+    margin: 41px -154px 48px 0px;
   }
   .login{
       flex-basis: 40%;
@@ -100,7 +101,7 @@
   }
   .imgg
   {   
-      width: 81%;
+      width: 68%;
       align-items: center;
       left: 50%;
       display: block;
@@ -134,7 +135,7 @@
   }
   
   .innercontent p {
-    color: #c7edee;
+    color: #b6ddff;
     margin-bottom: 40px;
     padding-top: 5%;
     font-size: 25px;
