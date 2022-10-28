@@ -18,57 +18,64 @@ const StyledTableCell = withStyles((theme) => ({
   head: {
     // backgroundColor: "rgba(1, 247, 247, 0.72)",
     color: "white",
-    border: "none",
+    // border:"0.1px solid #ad52ac",
     fontFamily: "Russo One",
-    fontSize: 16,
-    background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 7.77%, rgba(255, 255, 255, 0.01) 87.65%)",
+    fontSize: "16px",
+    
+     background: "linear-gradient(112.76deg, rgba(255, 255, 255, 0.04) 70%, rgba(255, 255, 255, 0.01) 87.65%)",
     backdropFilter: "blur(20px)",
-    boxShadow: "1px 1px 2px rgb(255, 93, 174)",
+    boxShadow: "1px 1px 2px #ad52ac",
     
   },
   body: {
     fontFamily: "Russo One",
     fontSize: 14,
     color: "#fff",
-    border: "none",
-    borderRadius:"12px",
+    border:"none",
+    // borderRadius:"12px",
+    
     padding:"13px"
   },
 }))(TableCell);
 
 const StyledTableRow = withStyles((theme) => ({
   root: {
-    // "&:nth-of-type(1)": {
-    //    backgroundColor: "#1b0045 !important",
-    //   color: "#000 !important",
-    // },
-    // "&:nth-of-type(2)": {
-    //   backgroundColor: "#1b0045 !important",
-    //   color: "#000 !important"
-    // },
-    // "&:nth-of-type(3)": {
-    //   backgroundColor: "#1b0045 !important",
-    //   color: "#000 !important"
-    // },
-    // "&:nth-of-type(odd)": {
-    //   //backgroundColor: "#1b0045 !important",
-    //   background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
-    //   color: "#000 !important"
-    // },
-    // "&:nth-of-type(even)": {
-    //   //backgroundColor: "#1b0045 !important",
+    "&:nth-of-type(1)": {
+       backgroundColor: "#1b0045 !important",
+      //color: "#000 !important",
+    
+    },
+    "&:nth-of-type(2)": {
+      backgroundColor: "#1b0045 !important",
+      // color: "#000 !important"
+    },
+    "&:nth-of-type(3)": {
+      backgroundColor: "#1b0045 !important",
+      // color: "#000 !important"
+    },
+    "&:nth-of-type(odd)": {
+      //backgroundColor: "#1b0045 !important",
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
+      //color: "#000 !important"
+    },
+    "&:nth-of-type(even)": {
+      //backgroundColor: "#1b0045 !important",
 
-    //   background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
-    //   color: "white !important",
-    // },
+      background:"linear-gradient(112.76deg, rgba(255, 255, 255, 0.09) 7.77%, rgba(255, 255, 255, 0.1) 87.65%) !important",
+      //color: "white !important",
+    },
 
 
     
     // border:"2px solid white",
-    
-    backdropFilter:"blur(14px)",
-    borderRadius:"12px",
-    margin:"1px 1px 1px 1px"
+    backdropFilter: "blur(20px)",
+    // backdropFilter:"blur(14px)",
+    // borderRadius:"12px",
+    // margin:"1px 1px 1px 1px"
+    // border:"0.1px solid #ad52ac",
+    //borderRadius:"10px",
+
+
     
   },
 }))(TableRow);
@@ -79,7 +86,7 @@ const useStyles = makeStyles({
     maxWidth: "900px",
     minWidth:"100px",
     width:"90%",
-    borderRadius:"12px",
+    // borderRadius:"12px",
     overflowX: "hidden",
    
   },
@@ -125,12 +132,12 @@ export default function Leadertable() {
         <div className="rtable">
           <Table className={classes.table} aria-label="customized table">
             <TableHead >
-              <TableRow>
-                <StyledTableCell>Rank</StyledTableCell>
-                <StyledTableCell>Avatar</StyledTableCell>
+              <TableRow >
+                <StyledTableCell >Rank</StyledTableCell>
+                <StyledTableCell >Avatar</StyledTableCell>
                 
-                <StyledTableCell align="left">Player</StyledTableCell>
-                <StyledTableCell align="left">Points</StyledTableCell>
+                <StyledTableCell align="left" >Player</StyledTableCell>
+                <StyledTableCell align="left" >Points</StyledTableCell>
               </TableRow>
             </TableHead>
             {RankList.length ? (
@@ -138,7 +145,7 @@ export default function Leadertable() {
                 {RankList.map((row, index) => (
                   <StyledTableRow
                     key={index}
-                    style={{ fontFamily: "'Barlow', sans-serif",}}
+                    style={{ fontFamily: "'Barlow', sans-serif",borderRadius:"12px"}}
                   >
                     <StyledTableCell component="th" scope="row">
                       {row.rank}.
