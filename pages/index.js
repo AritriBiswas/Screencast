@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Login from "../components/Login"
 import styles from "../styles/index.module.css"
+import LeadboardLogin from "../components/LeadboardLogin"
 import Rules from "../components/Rules"
 import Link from 'next/link'
 import Footers from "../components/Footers"
+import { GoogleOAuthProvider } from "@react-oauth/google";
 
 function index() {
   
@@ -24,9 +26,13 @@ function index() {
        
       <div className={styles.buttons}>
       <Rules />
-      <Link href='/leaderboard'>
-      <a className={styles.btn}>Leaderboard</a>
-      </Link>
+      <LeadboardLogin>
+      {/* <GoogleOAuthProvider clientId="23832229348-1vhkpuh87bbab8ikpscvbs78migp0os6.apps.googleusercontent.com"> */}
+        {/* <Link href='/leaderboard'> */}
+        <a className={styles.btn}>Leaderboard</a>
+        {/* </Link> */}
+      {/* </GoogleOAuthProvider> */}
+      </LeadboardLogin>
     </div>
       
     </div>

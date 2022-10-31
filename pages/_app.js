@@ -33,7 +33,8 @@ function MyApp(props) {
         const { Component, pageProps } = props;
 
         return(
-        <GoogleOAuthProvider clientId='362750671866-d6f7gorqe40b1297kgion38dpan49ij9.apps.googleusercontent.com'>
+        // <GoogleOAuthProvider clientId='362750671866-d6f7gorqe40b1297kgion38dpan49ij9.apps.googleusercontent.com'>
+        <GoogleOAuthProvider clientId='23832229348-1vhkpuh87bbab8ikpscvbs78migp0os6.apps.googleusercontent.com'>
         <React.Fragment>
         <Head>
         <meta charSet="UTF-8" />

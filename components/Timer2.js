@@ -4,6 +4,7 @@ import Countdown, { zeroPad } from 'react-countdown';
 import styles from "../styles/Timer2.module.css";
 import DrawerLeft from './DrawerLeft';
 import DrawerRight from './DrawerRight';
+// import { text } from 'stream/consumers';
 
 export default function Timer(props) {
     console.log(props)
@@ -69,7 +70,7 @@ export default function Timer(props) {
                             <h1>
                                 {props.message}&nbsp;&nbsp;
                                 <div className={styles.tile}>
-                                    <div className="r1"><div className={styles.tile2}>{zeroPad(days, 2)}</div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div></div>
+                                    <div className="r1"><div className={styles.tile2}>{zeroPad(days, 2)}<p style={{fontFamily:"serif", color:"white", fontSize:"1px"}}>days</p></div>&nbsp;:&nbsp;<div className={styles.tile3}>{zeroPad(hours)}</div></div>
                                     &nbsp;<div className="colon">:</div>&nbsp;<div className="r2"><div className={styles.tile4}>{zeroPad(minutes)}</div>&nbsp;:&nbsp;<div className={styles.tile5}>{zeroPad(seconds)}</div></div>
                                 </div>
                             </h1>
